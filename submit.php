@@ -2,6 +2,7 @@
 
 <html>
 <body>
+  <h1>Confirmation</h1>
   <h3>Information provided:</h3>
 Name: <?php echo $_POST["fname"] . " " . $_POST["lname"];?><br>
 Address: <?php echo $_POST["street"] . " " . $_POST["city"] . ", " . $_POST["state"] . " " . $_POST["postcode"] . ", " . $_POST["country"]; ?><br>
