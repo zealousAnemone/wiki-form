@@ -36,5 +36,8 @@ function project($frequency, $amount) {
   elseif ($frequency == "Monthly") {
     echo "$" . $amount * 12;
   }
+  else {
+    echo "Can't calculate yearly donation.";
+  }
 }
 ?>
