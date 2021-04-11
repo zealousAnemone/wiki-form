@@ -1,4 +1,6 @@
-
+<?php
+  include 'Project.php';
+  ?>
 
 <html>
 <body>
@@ -17,7 +19,7 @@ Comments: <?php echo htmlspecialchars($_POST["comments"]); ?><br>
 <?php
 $freq = $_POST["frequency"];
 $amt = $_POST["amount"];
-project("$freq", $amt)
+echo project("$freq", $amt)
 
 ?><br>
 <button>Confirm</button>
@@ -27,17 +29,4 @@ project("$freq", $amt)
 
 </body>
 </html>
-<?php 
 
-function project($frequency, $amount) {
-  if ($frequency == "One-time" || $frequency == "Yearly"  ) {
-    echo "$" . $amount;
-  }
-  elseif ($frequency == "Monthly") {
-    echo "$" . $amount * 12;
-  }
-  else {
-    echo "Can't calculate yearly donation.";
-  }
-}
-?>
