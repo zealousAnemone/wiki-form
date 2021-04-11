@@ -9,7 +9,7 @@ class ProjectTest extends TestCase
         $result = project("Monthly", 10);
         $this->assertEquals("$120", $result);
     }
-    public function testYearly()
+    public function testYearlyu()
     {
         $result = project("Yearly", 120);
         $this->assertEquals("$120", $result);
